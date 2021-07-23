@@ -1,0 +1,22 @@
+table{
+    font-family: 'Calibri', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    max-width: 60vw;
+}
+caption{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    height: 2.5rem;
+    padding-top: 0.8rem;
+    background: rgb(202, 238, 164);}
+td{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 3rem;
+    white-space: nowrap;
+    border-bottom: 1px solid green;
+    width: 25%;
+}

@@ -4,7 +4,7 @@ $.ajax({
     url: "https://www.feriadosapp.com/api/holidays.json",
     dataType: 'JSON',
     success: function(feriados){
-        let tabla = `<table><thead><tr><th>Feriados de Chile</th></tr></thead><tbody>`;
+        let tabla = `<table><caption>Feriados de Chile</caption><tbody>`;
             feriados.data.forEach(element=>{
             tabla += `<tr><td>${element.date}</td><td>${element.title}</td><td>${element.extra}</td><td>${element.law}</td></tr>`
         })
@@ -12,7 +12,7 @@ $.ajax({
         $('body').append(tabla)
     },
     error: function(feriados){
-        $('body').text("No ha sido posible traer los datos")
+        $('body').append("No ha sido posible traer los datos :(")
     },
     async: true,
 });
